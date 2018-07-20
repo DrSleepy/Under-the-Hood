@@ -1,23 +1,28 @@
 <template>
   <div class="root">
 
-    <header class="root__header">
+    <header class="header">
       <p class="slogan"> Under the Hood </p>
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <div class="root__search">
+    <div class="search">
       <input class="search__input" type="text" placeholder="Search...">
     </div>
+
+    <Block/>
 
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+import Block from './components/Block.vue';
 
 @Component({
-  components: {}
+  components: {
+    Block
+  }
 })
 export default class App extends Vue {}
 </script>
@@ -39,7 +44,7 @@ export default class App extends Vue {}
 }
 
 // Header Text
-.root__header {
+.header {
   .pad-3;
   background-color: @primary-theme-color;
 }
@@ -53,16 +58,16 @@ export default class App extends Vue {}
 }
 
 //  Search Bar
-.root__search {
+.search {
   .pad-3;
   background-color: @primary-theme-color;
 }
 .search__input {
   .pad-2--5;
+  .box-shadow-1;
   width: 100%;
   border-radius: 2px;
   border: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 ::placeholder {
