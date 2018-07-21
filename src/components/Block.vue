@@ -3,12 +3,25 @@
 
     <header class="block__header">
       <h2> Execution Context </h2>
-      <i class="fas fa-chevron-down"></i>
+      <label class="fas fa-chevron-down" for="header__checkbox"></label>
+      <input id="header__checkbox" class="header__checkbox" type="checkbox">
     </header>
 
     <main class="block__content">
-      <h3 class="content__subheading"> Definition </h3>
-      <p class="content__text"> This is when something bad happens like lorem I posum to be honest i don't even know the meaning that these people say they do when. Truely the legitemate are simple this is when something bad happens like know the. </p>
+      <div class="content__section">
+        <h3 class="content__subheading"> Definition: </h3>
+        <p class="content__text"> This is when something bad happens like lorem I posum to be honest i don't even know the meaning that these people say they do when. Truely the legitemate are simple this is when something bad happens like know the. </p>
+      </div>
+
+      <div class="content__section">
+        <h3 class="content__subheading"> Example: </h3>
+        <p class="content__text"> This is when something bad happens like lorem I posum to be honest i don't even know the meaning that these people sayn. Truens like lorem I posum to be d happens like lorem I posum to be honest i don't even know the meaning that these people sayn. Truely the legitemate are honest i don't even know the meaning. </p>
+      </div>
+
+      <div class="content__section">
+        <h3 class="content__subheading"> Result: </h3>
+        <p class="content__text"> This is when something bad happens like lorem I posum to be honest i don't even know the meaning that these people sayn. Truens like lorem I posum to be d happens like lorem I posum to be honest i don't even know the meaning that these people sayn. Truely the legitemate are honest i don't even know the meaning. </p>
+      </div>
     </main>
 
   </section>
@@ -25,7 +38,6 @@ export default {};
   .box-shadow-1;
   .push-down-3;
   background-color: #fff;
-  height: 300px;
 
   &__header,
   &__content {
@@ -41,15 +53,23 @@ export default {};
   }
 
   &__content {
-    .micro;
+    .milli;
     font-family: 'Roboto';
     color: @light-black-text-color;
   }
 }
 
+.header {
+  &__checkbox {
+    display: none;
+  }
+}
+
 .content {
+  &__section {
+    .push-down-5;
+  }
   &__subheading {
-    .micro;
     .push-down-2;
     color: @subheading-text-color;
   }

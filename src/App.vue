@@ -71,7 +71,7 @@ export default class App extends Vue {}
 }
 
 ::placeholder {
-  .micro;
+  .kilo;
   color: #4a6680;
   opacity: 0.4;
   font-family: 'main-font-normal';
