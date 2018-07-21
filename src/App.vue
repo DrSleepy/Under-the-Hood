@@ -11,6 +11,9 @@
     </div>
 
     <Block/>
+    <Block/>
+    <Block/>
+    <Block/>
 
   </div>
 </template>
@@ -20,9 +23,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import Block from './components/Block.vue';
 
 @Component({
-  components: {
-    Block
-  }
+  components: { Block }
 })
 export default class App extends Vue {}
 </script>
@@ -71,7 +72,7 @@ export default class App extends Vue {}
 }
 
 ::placeholder {
-  .kilo;
+  .micro;
   color: #4a6680;
   opacity: 0.4;
   font-family: 'main-font-normal';

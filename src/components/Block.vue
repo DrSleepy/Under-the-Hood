@@ -3,11 +3,11 @@
 
     <header class="block__header">
       <h2> Execution Context </h2>
-      <label class="fas fa-chevron-down" for="header__checkbox"></label>
-      <input id="header__checkbox" class="header__checkbox" type="checkbox">
+      <input id="header__checkbox" class="header__checkbox" type="checkbox" v-model="show">
+      <label class="fas fa-chevron-down header__label" for="header__checkbox"></label>
     </header>
 
-    <main class="block__content">
+    <main class="block__content" v-if="show">
       <div class="content__section">
         <h3 class="content__subheading"> Definition: </h3>
         <p class="content__text"> This is when something bad happens like lorem I posum to be honest i don't even know the meaning that these people say they do when. Truely the legitemate are simple this is when something bad happens like know the. </p>
@@ -27,8 +27,13 @@
   </section>
 </template>
 
-<script>
-export default {};
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component
+export default class Block extends Vue {
+  protected show: boolean = false;
+}
 </script>
 
 <style lang="less" scoped>
@@ -61,7 +66,16 @@ export default {};
 
 .header {
   &__checkbox {
+    @speed: 200ms;
     display: none;
+
+    &:checked + .header__label {
+      transition: @speed;
+      transform: rotate(180deg);
+    }
+    &:not(:checked) + .header__label {
+      transition: @speed;
+    }
   }
 }
 
