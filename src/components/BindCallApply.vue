@@ -10,6 +10,7 @@
       // Example
       function.call(ContextOfThis, Param1, Param2);
       function.apply(ContextOfThis, [Param1, Param2]);
+      // bob
       </code>
     </pre>
 
@@ -18,16 +19,17 @@
 
     <pre v-highlightjs>
       <code class="javascript" id="code">
-      // Example f
+      // Example 
       function.apply(ContextOfThis, Param1, Param2);
+
       // Usage
       function car(make, year){
-        console.log(`Make is ${make} and year is ${year}`)
+        console.log(`Make is ${make} and year is ${year}`);
       }
+
       car(); //output: Make is undefined and year is undefined
       const nissan = car.bind(this, 'nissan'); //output: Make is nissan and year is undefined
-      nissan(1998); //output: Make is nissan and year is 1998
-
+      nissan(1998); //output: Make is nissan and year is 1998=
       </code>
     </pre>
 
