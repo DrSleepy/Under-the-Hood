@@ -11,40 +11,27 @@
     </Block>
 
     <Block :title="'Execution Context'">
-      <BindCallApply/>
-    </Block>
-
-    <Block>
-      <BindCallApply/>
-    </Block>
-
-    <Block>
-      <BindCallApply/>
-    </Block>
-
-    <Block>
-      <BindCallApply/>
-    </Block>
-
-    <Block>
-      <BindCallApply/>
+      <ExecutionContext/>
     </Block>
 
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
 import Block from './components/Block.vue';
 import BindCallApply from './components/BindCallApply.vue';
+import ExecutionContext from './components/ExecutionContext.vue';
 
-@Component({
+export default {
   components: {
     Block,
-    BindCallApply
+    BindCallApply,
+    ExecutionContext
+  },
+  data() {
+    return {};
   }
-})
-export default class App extends Vue {}
+};
 </script>
 
 <style lang="less">

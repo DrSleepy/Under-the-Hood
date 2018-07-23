@@ -1,6 +1,6 @@
 <template>
   <div class="content__section">
-    <p class="content__text"> Bind, Call and Apply are all functions that live on the prototype of the function object. All three functions allow you to change the context of the 'this' keyword by passing the context as the first parameter. </p>
+    <p class="content__text"> Bind, Call and Apply are all functions that live on the prototype of a function. All three functions allow you to change the context of the 'this' keyword by passing context as the first parameter. </p>
 
     <h3 class="content__subheading"> Call & Apply </h3>
     <p class="content__text">Call and Apply work in the exact same way with one difference. Call accepts parameters separated by commas whereas Apply only accepts an array of parameters as its second argument. Both functions (Call and Apply) also immediately execute the functions they are used on.</p>

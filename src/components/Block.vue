@@ -1,9 +1,9 @@
 <template>
   <section class="block">
 
-    <label class="block__header" for="block__checkbox">
+    <label class="block__header">
       <h2> {{ title }}</h2>
-      <input id="block__checkbox" class="block__checkbox" type="checkbox" v-model="show">
+      <input class="block__checkbox" type="checkbox" v-model="show">
       <i class="fas fa-chevron-down header__label"></i>
     </label>
 
@@ -15,14 +15,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Block extends Vue {
-  @Prop() protected title: string;
-
-  protected show: boolean = false;
-}
+export default {
+  props: {
+    title: String
+  },
+  data() {
+    return {
+      show: false
+    };
+  }
+};
 </script>
 
 <style lang="less" scoped>
