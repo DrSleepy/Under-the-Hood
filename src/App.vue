@@ -10,10 +10,33 @@
       <input class="search__input" type="text" placeholder="Search...">
     </div>
 
-    <Block/>
-    <Block/>
-    <Block/>
-    <Block/>
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
+
+    <Block>
+      <BindCallApply/>
+    </Block>
 
   </div>
 </template>
@@ -21,9 +44,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Block from './components/Block.vue';
+import BindCallApply from './components/BindCallApply.vue';
 
 @Component({
-  components: { Block }
+  components: {
+    Block,
+    BindCallApply
+  }
 })
 export default class App extends Vue {}
 </script>

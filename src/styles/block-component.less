@@ -1,0 +1,52 @@
+@import (reference) './index.less';
+
+// code
+.code {
+  .box-shadow-1;
+  border-radius: 4px;
+}
+
+// block
+.block {
+  .box-shadow-1;
+  .push-down-3;
+  background-color: #fff;
+}
+.block__header,
+.block__content {
+  .pad-4;
+}
+.block__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  font-family: 'main-font-medium';
+  border-bottom: solid 1px #e7eeef;
+}
+.block__content {
+  .milli;
+  font-family: 'Roboto';
+  color: @light-black-text-color;
+}
+
+// header
+.header__checkbox {
+  display: none;
+}
+
+// content
+.content__section {
+  .push-down-5;
+}
+.content__subheading,
+.content__subheading--small {
+  .push-down-1;
+}
+
+.content__subheading {
+  color: @subheading-text-color;
+}
+.content__text {
+  .push-down-5;
+  line-height: @size-4--5;
+}
