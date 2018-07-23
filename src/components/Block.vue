@@ -1,11 +1,11 @@
 <template>
   <section class="block">
 
-    <header class="block__header">
-      <h2> Bind, Call & Apply </h2>
-      <input id="header__checkbox" class="header__checkbox" type="checkbox" v-model="show">
-      <label class="fas fa-chevron-down header__label" for="header__checkbox"></label>
-    </header>
+    <label class="block__header" for="block__checkbox">
+      <h2> {{ title }}</h2>
+      <input id="block__checkbox" class="block__checkbox" type="checkbox" v-model="show">
+      <i class="fas fa-chevron-down header__label"></i>
+    </label>
 
     <main class="block__content" v-if="show">
       <slot></slot>
@@ -15,10 +15,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Block extends Vue {
+  @Prop() protected title: string;
+
   protected show: boolean = false;
 }
 </script>
@@ -38,14 +40,14 @@ export default class Block extends Vue {
   .block__content;
 }
 
-.header__checkbox {
-  .header__checkbox;
+.block__checkbox {
+  .block__checkbox;
 }
-.header__checkbox:checked + .header__label {
+.block__checkbox:checked + .header__label {
   transition: 200ms;
   transform: rotate(180deg);
 }
-.header__checkbox:not(:checked) + .header__label {
+.block__checkbox:not(:checked) + .header__label {
   transition: 200ms;
 }
 </style>

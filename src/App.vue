@@ -6,19 +6,11 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <div class="search">
-      <input class="search__input" type="text" placeholder="Search...">
-    </div>
-
-    <Block>
+    <Block :title="'Bind, Call & Apply'">
       <BindCallApply/>
     </Block>
 
-    <Block>
-      <BindCallApply/>
-    </Block>
-
-    <Block>
+    <Block :title="'Execution Context'">
       <BindCallApply/>
     </Block>
 
@@ -83,25 +75,5 @@ export default class App extends Vue {}
 .language {
   .yotta;
   font-family: 'main-font-medium';
-}
-
-//  Search Bar
-.search {
-  .pad-3;
-  background-color: @primary-theme-color;
-}
-.search__input {
-  .pad-2--5;
-  .box-shadow-1;
-  width: 100%;
-  border-radius: 2px;
-  border: none;
-}
-
-::placeholder {
-  .micro;
-  color: #4a6680;
-  opacity: 0.4;
-  font-family: 'main-font-normal';
 }
 </style>
