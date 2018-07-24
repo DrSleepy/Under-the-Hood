@@ -6,12 +6,8 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <Block :title="'Bind, Call & Apply'">
-      <BindCallApply/>
-    </Block>
-
-    <Block :title="'Execution Context'">
-      <ExecutionContext/>
+    <Block :title="'Event Queue / Loop'">
+      <EventQueue/>
     </Block>
 
   </div>
@@ -21,12 +17,18 @@
 import Block from './components/Block.vue';
 import BindCallApply from './components/BindCallApply.vue';
 import ExecutionContext from './components/ExecutionContext.vue';
+import Coercion from './components/Coercion.vue';
+import Closures from './components/Closures.vue';
+import EventQueue from './components/EventQueue.vue';
 
 export default {
   components: {
     Block,
     BindCallApply,
-    ExecutionContext
+    ExecutionContext,
+    Coercion,
+    Closures,
+    EventQueue
   },
   data() {
     return {};

@@ -1,35 +1,34 @@
 <template>
   <div class="content__section">
-    <p class="content__text"> Bind, Call and Apply are all functions that live on the prototype of a function. All three functions allow you to change the context of the 'this' keyword by passing context as the first parameter. </p>
 
-    <h3 class="content__subheading"> Call & Apply </h3>
-    <p class="content__text">Call and Apply work in the exact same way with one difference. Call accepts parameters separated by commas whereas Apply only accepts an array of parameters as its second argument. Both functions (Call and Apply) also immediately execute the functions they are used on.</p>
+    <p class="content__text"> An execution context is a wrapper made by the JavaScript engine that wraps around the currently executing code (such as a function). This is created before any of the code is ran. </p>
 
-    <pre v-highlightjs>
-      <code class="javascript" id="code">
-      // Example
-      function.call(ContextOfThis, Param1, Param2);
-      function.apply(ContextOfThis, [Param1, Param2]);
-      </code>
-    </pre>
+    <p class="content__text">
+      <span class="bold">Each function gets its own execution context whereas objects do not</span>. As they are created, they are placed onto the exectuion stack, then removed once the last line within the function is ran.</p>
 
-    <h3 class="content__subheading"> Bind </h3>
-    <p class="content__text">Bind works differently than the other two. Bind create a copy of the function it is used on. The copied function will be returned. Bind changes the context of the 'this' keyword just the same as Call and Apply but any other parameters given to it will be set as a permanent value of the function it copied.</p>
+    <p class="content__text">There are two phases to an execution context: </p>
+    <h3 class="content__subheading"> Phase 1 - Creation </h3>
+    <p class="content__text">
+      <ul>
+        <li>
+          1. Sets up the variables and functions in memory, hoisting them. These are scoped to the execution context.
+        </li>
+        <li>
+          2. The context of 'This' is set up.
+        </li>
+        <li>
+          3. The outer environment of the context execution being created is set up.
+        </li>
+        <li>
+          4. The global object is set up.
+        </li>
+      </ul>
+    </p>
 
-    <pre v-highlightjs>
-      <code class="javascript" id="code">
-      // Example f
-      function.apply(ContextOfThis, Param1, Param2);
-      // Usage
-      function car(make, year){
-        console.log(`Make is ${make} and year is ${year}`)
-      }
-      car(); //output: Make is undefined and year is undefined
-      const nissan = car.bind(this, 'nissan'); //output: Make is nissan and year is undefined
-      nissan(1998); //output: Make is nissan and year is 1998
+    <p class="content__text"> There is always a base execution context. This is known as the global execution context. It is available from anywhere to everything.</p>
 
-      </code>
-    </pre>
+    <h3 class="content__subheading"> Phase 2 - Execution </h3>
+    <p class="content__text"> The second phase simply runs the code inside the wrapper line by line. </p>
 
   </div>
 </template>
@@ -40,7 +39,6 @@ export default {};
 
 <style lang="less" scoped>
 @import (reference) '../styles/index.less';
-
 #code {
   .code;
 }
@@ -55,5 +53,9 @@ export default {};
 
 .content__text {
   .content__text;
+}
+
+.bold {
+  .bold;
 }
 </style>
