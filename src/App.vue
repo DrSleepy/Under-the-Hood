@@ -6,8 +6,8 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <Block :title="'Lexical Placement, Hoisting & Undefined'">
-      <LexicalHoistingUndefined/>
+    <Block :title="'Prototypal Inheritance & ES6 Classes'">
+      <PrototypalInheritance/>
     </Block>
 
   </div>
@@ -23,6 +23,9 @@ import EventQueue from './components/EventQueue.vue';
 import FunctionConstructor from './components/FunctionConstructor.vue';
 import Functions from './components/Functions.vue';
 import LexicalHoistingUndefined from './components/LexicalHoistingUndefined.vue';
+import IIFE from './components/IIFE.vue';
+import Objects from './components/Objects.vue';
+import PrototypalInheritance from './components/PrototypalInheritance.vue';
 
 export default {
   components: {
@@ -34,7 +37,10 @@ export default {
     EventQueue,
     FunctionConstructor,
     Functions,
-    LexicalHoistingUndefined
+    LexicalHoistingUndefined,
+    IIFE,
+    Objects,
+    PrototypalInheritance
   },
   data() {
     return {};
