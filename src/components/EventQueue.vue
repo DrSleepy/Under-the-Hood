@@ -5,13 +5,15 @@
       <span class="bold"> after </span> the execution stack is empty. </p>
 
     <h3 class="content__subheading"> Event Queue Blocking </h3>
-    <p class="content__text"> If the execution stack has a function that's running a for loop, then the event queue will not be looked at until the for loop has completed. Let's put this to the test by running a for loop then clicking before the for loop has finished executing. </p>
+    <p class="content__text"> If the execution stack has a function that's running a forEach, then the event queue will not be looked at until the forEach has completed. Let's put this to the test by running a forEach then clicking on the window before the forEach has finished executing. </p>
 
     <pre v-highlightjs>
       <code class="javascript" id="code">
-      for ( let i = 0; i < 1000; i++ ){
-        console.log(i);
-      }
+      const array = [1, 2, 3, ..., 1000];
+
+      array.forEach(function(item){
+        console.log(item)
+      });
 
       window.addEventListener('click', function(){
         console.log('window clicked');
@@ -30,7 +32,7 @@
     <p class="content__text"> If the event queue contains more than 1 event, the first event will be processed (given that the execution stack is empty). Then before processing the 2nd event, the execution stack will be looked at once more to make sure it is empty before proceeding to the 2nd event in the queue. </p>
 
     <h3 class="content__subheading"> Event Queue vs SetTimeout </h3>
-    <p class="content__text"> SetTimeout unlike a for loop
+    <p class="content__text"> SetTimeout unlike a forEach
       <span class="bold">does not</span> block the execution stack. This is because the browser specifically deals with setTimeout whenever it is used, meaning it does not physically sit on the execution stack nor the event queue. As soon as the setTimeout is executed, it is processed by the browser separately in isolation. Once the timer has completed, only then will it be into the event queue (not execution stack) to be processed as normal.</p>
 
     <pre v-highlightjs>

@@ -6,8 +6,8 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <Block :title="'Event Queue / Loop'">
-      <EventQueue/>
+    <Block :title="'Lexical Placement, Hoisting & Undefined'">
+      <LexicalHoistingUndefined/>
     </Block>
 
   </div>
@@ -20,6 +20,9 @@ import ExecutionContext from './components/ExecutionContext.vue';
 import Coercion from './components/Coercion.vue';
 import Closures from './components/Closures.vue';
 import EventQueue from './components/EventQueue.vue';
+import FunctionConstructor from './components/FunctionConstructor.vue';
+import Functions from './components/Functions.vue';
+import LexicalHoistingUndefined from './components/LexicalHoistingUndefined.vue';
 
 export default {
   components: {
@@ -28,7 +31,10 @@ export default {
     ExecutionContext,
     Coercion,
     Closures,
-    EventQueue
+    EventQueue,
+    FunctionConstructor,
+    Functions,
+    LexicalHoistingUndefined
   },
   data() {
     return {};
