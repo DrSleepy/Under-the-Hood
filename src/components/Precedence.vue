@@ -41,12 +41,10 @@ export default {};
 }
 
 .link {
-  text-decoration: none;
   color: rgba(58, 207, 195, 0.849);
-}
 
-.link:hover {
-  text-decoration: none;
-  color: rgba(46, 179, 167, 0.877);
+  &:hover {
+    color: rgba(46, 179, 167, 0.877);
+  }
 }
 </style>
