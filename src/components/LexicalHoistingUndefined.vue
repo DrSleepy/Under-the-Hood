@@ -23,7 +23,7 @@
       <code class="javascript" id="code">
       var name; // name variable is hoisted to the top and space is allocated for in memory but not yet given a value
       name; // output: 'undefine' | attempting to use 'name' variable before line that gives it a value results in 'undefined'
-      name = 'Bob'; // setting up value of 'name' variablel
+      name = 'Bob'; // setting up value of 'name' variable
       name; // ouput: 'Bob'
       </code>
     </pre>

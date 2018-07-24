@@ -1,7 +1,7 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> A function constructor is a function attempting to act as a class (like in Java) by creating an object once executed. It is called a function constructor because it is creating an object using a function. It is best practise to capitalise the first letter of the function name when treating it like a class. </p>
+    <p class="content__text"> A function constructor is a function attempting to act as a class (like in Java) by creating an object once executed. It is called a function constructor because it is creating an object using a function. It is best practice to capitalize the first letter of the function name when treating it like a class. </p>
 
     <h3 class="content__subheading"> 'This' keyword </h3>
     <p class="content__text"> Remembering that functions are objects, function constructors often use the 'this' keyword to create properties and methods within the function when invoked. Doing so creates an object with properties and methods, like a class would. </p>

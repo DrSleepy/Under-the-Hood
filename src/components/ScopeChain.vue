@@ -1,7 +1,7 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> Scope chain is a link of exection contexts until the last (global) execution context is reached. However, the link down does
+    <p class="content__text"> Scope chain is a link of execution contexts until the last (global) execution context is reached. However, the link down does
       <span class="bold">NOT</span> connect each execution context in the execution stack from top to bottom. Some execution contexts may be skipped depending on the lexical placement of the function the execution context was created for. </p>
 
     <p class="content__text">If the JavaScript engine cannot find a variable inside a function, it will then proceed to scope down the chain to until the variable is found. The next execution context it checks in for the variable is in its outer environment, which is the
@@ -45,7 +45,7 @@
       <span class="bold">on the stack</span>, the next nearest outer environment for B is on the global execution context. This is because function B
       <span class="bold">physically</span>, function B sits lexically on the global scope. If Function B was nested inside function A, then function A would be function B's next scope on the scope chain.</p>
 
-    <p class="content__text">The outter environment is
+    <p class="content__text">The outer environment is
       <span class="bold">where</span> the current execution context (or function) physically sits in the code.</p>
 
   </div>

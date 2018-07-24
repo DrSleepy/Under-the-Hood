@@ -4,7 +4,7 @@
     <p class="content__text"> An execution context is a wrapper made by the JavaScript engine that wraps around the currently executing code (such as a function). This is created before any of the code is ran. </p>
 
     <p class="content__text">
-      <span class="bold">Each function gets its own execution context whereas objects do not</span>. As they are created, they are placed onto the exectuion stack, then removed once the last line within the function is ran.</p>
+      <span class="bold">Each function gets its own execution context whereas objects do not</span>. As they are created, they are placed onto the execution stack, then removed once the last line within the function is ran.</p>
 
     <p class="content__text">There are two phases to an execution context: </p>
     <h3 class="content__subheading"> Phase 1 - Creation </h3>

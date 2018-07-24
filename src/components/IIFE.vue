@@ -1,11 +1,11 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> An immediately invoked function expression (IIFE) is a function expression that is immedaitely invoked using parentheses after the closing brace of the expression. </p>
+    <p class="content__text"> An immediately invoked function expression (IIFE) is a function expression that is immediately invoked using parentheses after the closing brace of the expression. </p>
 
     <h3 class="content__subheading"> Anonymous Function Expressions </h3>
     <p class="content__text"> The JavaScript engine does not allow anonymous function statements. This is because when a new line starts with the word 'function', the engine expects the following word to be a name (of the function). The easiest and most common solution (which is also used by jQuery) to avoid erroring is to wrap the
-      <span class="bold">entire</span> anonymous function in parentheses. There are two ways to invoke such a wrapped function. Invoke the function either with the parentheses inside the wrapping parenthese or outside. </p>
+      <span class="bold">entire</span> anonymous function in parentheses. There are two ways to invoke such a wrapped function. Invoke the function either with the parentheses inside the wrapping parentheses or outside. </p>
 
     <pre v-highlightjs>
       <code class="javascript" id="code">

@@ -1,7 +1,7 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> A closure is when the variable environment of an execution context remains even after the execution context has finished and is removed from the execution stack. This is usually the case when a function returns another function. The returned function often uses variables from the function it resides (parent funciton) in even though it has finished executing. </p>
+    <p class="content__text"> A closure is when the variable environment of an execution context remains even after the execution context has finished and is removed from the execution stack. This is usually the case when a function returns another function. The returned function often uses variables from the function it resides (parent function) in even though it has finished executing. </p>
 
     <pre v-highlightjs>
       <code class="javascript" id="code">
@@ -20,7 +20,7 @@
     <p class="content__text"> As we can see, the 'age' variable is not declared inside the 'speed' function but rather in its outer environment (parent function). Even though this is the case, it is still available inside the 'speed' function because the variable environment of the 'cat' function still remains in memory long after it has finished executing. </p>
 
     <h3 class="content__subheading"> Garbage Collection </h3>
-    <p class="content__text"> The variable environment does not remaing for eternity. After sometime, the JavaScript garbage collection cleans up the variable environment in order to save memory. </p>
+    <p class="content__text"> The variable environment does not remain for eternity. After sometime, the JavaScript garbage collection cleans up the variable environment in order to save memory. </p>
 
   </div>
 </template>

@@ -4,7 +4,7 @@
     <p class="content__text"> Prototypal inheritance works similarly to 'Function Constructors' so this will be brief.</p>
 
     <h3 class="content__subheading"> The __proto__ </h3>
-    <p class="content__text"> Prototypal inheritance is when an object inherits the properties and method of another and adds them to the __proto__ of the object being created. This is differerent to function contructors as function contructors will add the properties and variables to the object rather than the __proto__.</p>
+    <p class="content__text"> Prototypal inheritance is when an object inherits the properties and method of another and adds them to the __proto__ of the object being created. This is different to function contructors as function contructors will add the properties and variables to the object rather than the __proto__.</p>
 
     <h3 class="content__subheading"> ES5 Prototypal inheritance: </h3>
     <pre v-highlightjs>
@@ -23,7 +23,7 @@
 
     <p class="content__text"> Both ES5 and ES6 code achieve the same result. In ES6, the prototype is set using the 'extends' keyword. </p>
 
-    <p class="content__text"> See 'Function Constructors' for more information.. </p>
+    <p class="content__text"> See 'Function Constructors' for more information. </p>
 
   </div>
 </template>

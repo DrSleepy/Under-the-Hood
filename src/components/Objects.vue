@@ -9,7 +9,7 @@
         2. Each property of an object also takes up its own slot in memory.
       </li>
       <li>
-        3. Objects reference their properies by the property's address in memory.
+        3. Objects reference their properties by the property's address in memory.
       </li>
     </ul>
 

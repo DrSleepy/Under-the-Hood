@@ -1,7 +1,7 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> A function is an invokable section of code. Function names are optional. A function without a name is called an 'Anonymouse function'. </p>
+    <p class="content__text"> A function is an invokable section of code. Function names are optional. A function without a name is called an 'Anonymous function'. </p>
 
     <p class="content__text"> Functions are objects. An object with a 'name' property and a 'code' property. The 'code' property is invoked whenever the function is called using parentheses. </p>
 

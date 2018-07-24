@@ -1,10 +1,10 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> 'Use strict' is a string that is like a built-in linter. It makes sure a variable is delcared being attempting to use it. </p>
+    <p class="content__text"> 'Use strict' is a string that is like a built-in linter. It makes sure a variable is declared being attempting to use it. </p>
 
     <h3 class="content__subheading"> Placement </h3>
-    <p class="content__text"> It may be placed at the top of a file so that it execute globally or within a function so that it may exection within a certain section. </p>
+    <p class="content__text"> It may be placed at the top of a file so that it execute globally or within a function so that it may execute within a certain section. </p>
 
     <p class="content__text"> Global Placement: </p>
     <pre v-highlightjs>
@@ -29,7 +29,7 @@
       </code>
     </pre>
 
-    <p class="content__text"> It is important to note that each JavaScript engine interpretes the rules of "use strict" different so it is not always fully reliable to depend on. </p>
+    <p class="content__text"> It is important to note that each JavaScript engine interprets the rules of "use strict" different so it is not always fully reliable to depend on. </p>
 
   </div>
 </template>

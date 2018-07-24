@@ -1,7 +1,7 @@
 <template>
   <div class="content__section">
 
-    <p class="content__text"> Before explaining reflection, note the the 'For in' loop not only loops through an object, but also its prototype. </p>
+    <p class="content__text"> Before explaining reflection, note the 'For in' loop not only loops through an object, but also its prototype. </p>
 
     <p class="content__text"> Reflection means that an object can look at itself and change its own properties or methods. This process is mostly used when using the 'For in' loop. This is used to check whether the object being looped actually holds the property and is not a property of the prototype. This is done using 'hasOwnProperty' and is best for performance. </p>
 
