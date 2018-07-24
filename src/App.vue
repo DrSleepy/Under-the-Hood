@@ -6,6 +6,54 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
+    <Block :title="'Execution Context'">
+      <ExecutionContext/>
+    </Block>
+    <Block :title="'Bind, Call & Apply'">
+      <BindCallApply/>
+    </Block>
+    <Block :title="'Closures'">
+      <Closures/>
+    </Block>
+    <Block :title="'Coercion'">
+      <Coercion/>
+    </Block>
+    <Block :title="'Event Queue'">
+      <EventQueue/>
+    </Block>
+    <Block :title="'Functions'">
+      <Functions/>
+    </Block>
+    <Block :title="'Function Constructor'">
+      <FunctionConstructor/>
+    </Block>
+    <Block :title="'Immediately Invoked Function Expressions'">
+      <IIFE/>
+    </Block>
+    <Block :title="'Lexical Placement, Hoisting & Undefined'">
+      <LexicalHoistingUndefined/>
+    </Block>
+    <Block :title="'Objects'">
+      <Objects/>
+    </Block>
+    <Block :title="'Precedence & Associativity'">
+      <Precedence/>
+    </Block>
+    <Block :title="'Prototype'">
+      <Prototype/>
+    </Block>
+    <Block :title="'Prototypal Inheritance'">
+      <PrototypalInheritance/>
+    </Block>
+    <Block :title="'Reflection'">
+      <Reflection/>
+    </Block>
+    <Block :title="'Scope Chain'">
+      <ScopeChain/>
+    </Block>
+    <Block :title="'Use Strict'">
+      <UseStrict/>
+    </Block>
     <Block :title="'Value vs Reference'">
       <ValueReference/>
     </Block>
@@ -15,18 +63,19 @@
 
 <script lang="ts">
 import Block from './components/Block.vue';
+
 import BindCallApply from './components/BindCallApply.vue';
-import ExecutionContext from './components/ExecutionContext.vue';
-import Coercion from './components/Coercion.vue';
 import Closures from './components/Closures.vue';
+import Coercion from './components/Coercion.vue';
 import EventQueue from './components/EventQueue.vue';
+import ExecutionContext from './components/ExecutionContext.vue';
 import FunctionConstructor from './components/FunctionConstructor.vue';
 import Functions from './components/Functions.vue';
-import LexicalHoistingUndefined from './components/LexicalHoistingUndefined.vue';
 import IIFE from './components/IIFE.vue';
+import LexicalHoistingUndefined from './components/LexicalHoistingUndefined.vue';
 import Objects from './components/Objects.vue';
-import PrototypalInheritance from './components/PrototypalInheritance.vue';
 import Precedence from './components/Precedence.vue';
+import PrototypalInheritance from './components/PrototypalInheritance.vue';
 import Prototype from './components/Prototype.vue';
 import Reflection from './components/Reflection.vue';
 import ScopeChain from './components/ScopeChain.vue';
@@ -35,19 +84,19 @@ import ValueReference from './components/ValueReference.vue';
 
 export default {
   components: {
-    Block,
     BindCallApply,
-    ExecutionContext,
-    Coercion,
+    Block,
     Closures,
+    Coercion,
     EventQueue,
+    ExecutionContext,
     FunctionConstructor,
     Functions,
-    LexicalHoistingUndefined,
     IIFE,
+    LexicalHoistingUndefined,
     Objects,
-    PrototypalInheritance,
     Precedence,
+    PrototypalInheritance,
     Prototype,
     Reflection,
     ScopeChain,
