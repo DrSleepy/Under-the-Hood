@@ -6,8 +6,8 @@
       <h1 class="language"> JavaScript </h1>
     </header>
 
-    <Block :title="'Prototypal Inheritance & ES6 Classes'">
-      <PrototypalInheritance/>
+    <Block :title="'Value vs Reference'">
+      <ValueReference/>
     </Block>
 
   </div>
@@ -26,6 +26,12 @@ import LexicalHoistingUndefined from './components/LexicalHoistingUndefined.vue'
 import IIFE from './components/IIFE.vue';
 import Objects from './components/Objects.vue';
 import PrototypalInheritance from './components/PrototypalInheritance.vue';
+import Precedence from './components/Precedence.vue';
+import Prototype from './components/Prototype.vue';
+import Reflection from './components/Reflection.vue';
+import ScopeChain from './components/ScopeChain.vue';
+import UseStrict from './components/UseStrict.vue';
+import ValueReference from './components/ValueReference.vue';
 
 export default {
   components: {
@@ -40,7 +46,13 @@ export default {
     LexicalHoistingUndefined,
     IIFE,
     Objects,
-    PrototypalInheritance
+    PrototypalInheritance,
+    Precedence,
+    Prototype,
+    Reflection,
+    ScopeChain,
+    UseStrict,
+    ValueReference
   },
   data() {
     return {};
