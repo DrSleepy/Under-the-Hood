@@ -1,6 +1,5 @@
 <template>
   <div class="root">
-
     <header class="header">
       <p class="slogan"> Under the Hood </p>
       <h1 class="language"> JavaScript </h1>
@@ -64,7 +63,6 @@
       <h2 class="question"> Spotted a mistake? Let me know!</h2>
       <a class="email" href="mailto:M-Subahi@hotmail.com">M-Subahi@hotmail.com</a>
     </footer>
-
   </div>
 </template>
 
